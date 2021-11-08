@@ -12,8 +12,8 @@ descriptions = ["Free to a good home", "(batteries not included)", "As is", "Lik
 
 5.times do
   user = User.create(
-    username: Faker::Internet.username,
-    city: cities.sample
+    username: Faker::Internet.username, #generates the fake username using the faker gem
+    city: cities.sample #returns a random city from the cities array
   )
 
   rand(2..4).times do
